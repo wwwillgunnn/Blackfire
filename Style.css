@@ -1,0 +1,91 @@
+body {
+    background-image: url('Steak.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; /* Ensure no default margin is applied */
+    font-family: Arial, sans-serif; /* Set a default font */
+    min-height: 100vh; /* Set minimum height of the body to 100% of viewport height */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: space-between; /* Distribute space evenly between child elements */
+}
+
+.navbar ul {
+    list-style-type: none; /* Removes bullets from the list */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: right; /* Makes the list items align horizontally to the right */
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px; /* Adjusts the padding to make the nav bar shorter */
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+    margin-top: 20px; /* Adjusted top margin */
+}
+
+.Heading {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.Heading h1 {
+    font-size: 5em;
+    margin-bottom: 10px; /* Adjusted bottom margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.Heading p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px; /* Adjusted bottom margin */
+}
+
+.Heading .p1 {
+    font-size: 1.2em;
+    text-align: right;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-left: auto;
+    margin-bottom: 10px; /* Adjusted bottom margin */
+}
+
+.Button {
+    border: none;
+    background-color: #04AA6D;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: auto; /* Add margin to separate from the text */
+    margin-bottom: auto;
+}
