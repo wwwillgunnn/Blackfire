@@ -1,83 +1,91 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero section */
+.hero-section {
     background-image: url('Steak.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0; /* Ensure no default margin is applied */
-    font-family: Arial, sans-serif; /* Set a default font */
-    min-height: 100vh; /* Set minimum height of the body to 100% of viewport height */
-    display: flex;
-    flex-direction: column; /* Stack child elements vertically */
-    justify-content: space-between; /* Distribute space evenly between child elements */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
-.navbar ul {
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
     list-style-type: none; /* Removes bullets from the list */
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    padding: 10px; /* Add some padding */
 }
 
-.navbar li {
-    float: right; /* Makes the list items align horizontally to the right */
+nav li {
+    margin-left: 20px; /* Add space between list items */
 }
 
-.navbar li a {
+nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 15px; /* Adjusts the padding to make the nav bar shorter */
+    padding: 10px 15px;
     text-decoration: none;
 }
 
-.navbar li a:hover {
+/* TODO: Make hover animation have a line go underneath the text */
+nav li a:hover {
     background-color: #ddd;
     color: black;
 }
 
-.navbar li a.active {
+nav li a.active {
     background-color: #04AA6D;
     color: white;
 }
 
-.content {
-    padding: 16px;
-    margin-top: 20px; /* Adjusted top margin */
-}
-
-.Heading {
+.hero-content {
     display: flex;
-    flex-direction: column; /* Stack the items vertically */
-    align-items: flex-start; /* Align items to the start (left) */
-    justify-content: center;
-    color: white;
-    padding: 20px;
-    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rem;
 }
 
-.Heading h1 {
-    font-size: 5em;
-    margin-bottom: 10px; /* Adjusted bottom margin */
+.title {
+    margin: 5rem 0 0 2rem;
+}
+
+.title h1 {
+    font-size: 5rem; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 0.25em;
 }
 
-.Heading p {
-    font-size: 1.2em;
+.times {
+    margin: 2em;
+}
+
+.times p {
+    font-size: 1.2rem;
+    text-align: right;
     line-height: 1.5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px; /* Adjusted bottom margin */
 }
 
-.Heading .p1 {
-    font-size: 1.2em;
-    text-align: right;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin-left: auto;
-    margin-bottom: 10px; /* Adjusted bottom margin */
+.buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 2rem;
 }
 
-.Button {
+/* TODO: Make button look like the ones on figma */
+.cta-button {
     border: none;
     background-color: #04AA6D;
     color: white;
@@ -86,6 +94,4 @@ body {
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    margin-top: auto; /* Add margin to separate from the text */
-    margin-bottom: auto;
 }
