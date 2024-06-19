@@ -4,31 +4,20 @@
     box-sizing: border-box;
 }
 
-/* Hero section */
-.hero-section {
-    background-image: url('Steak.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-}
-
 header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav ul {
-    list-style-type: none; /* Removes bullets from the list */
+    list-style-type: none; 
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    padding: 10px; /* Add some padding */
+    justify-content: flex-end;
+    padding: 10px; 
 }
 
 nav li {
-    margin-left: 20px; /* Add space between list items */
+    margin-left: 20px; 
 }
 
 nav li a {
@@ -50,6 +39,18 @@ nav li a.active {
     color: white;
 }
 
+/* Hero section */
+.hero-section {
+    /*TODO: edit the photo in photoshop to look like the one in figma */
+    background-image: url('steak.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
 .hero-content {
     display: flex;
     flex-direction: row;
@@ -63,8 +64,13 @@ nav li a.active {
 
 .title h1 {
     font-size: 5rem; 
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin-bottom: 0.25em;
+    margin-bottom: 0.25rem;
+}
+
+.title span {
+    color: white;
 }
 
 .times {
@@ -73,6 +79,7 @@ nav li a.active {
 
 .times p {
     font-size: 1.2rem;
+    color: white;
     text-align: right;
     line-height: 1.5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -80,18 +87,18 @@ nav li a.active {
 
 .buttons {
     display: flex;
-    gap: 1em;
+    gap: 1rem;
     margin-top: 2rem;
 }
 
 /* TODO: Make button look like the ones on figma */
 .cta-button {
     border: none;
-    background-color: #04AA6D;
-    color: white;
-    padding: 15px 32px;
+    background-color: #800000;
+    color: #FFFFFF;
+    padding: 1em 2em;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
 }
