@@ -13,33 +13,40 @@ nav ul {
     list-style-type: none; 
     display: flex;
     justify-content: flex-end;
-    padding: 10px; 
+    padding: 1em; 
 }
 
 nav li {
-    margin-left: 20px; 
+    margin-left: 1em; 
 }
 
 nav li a {
     display: block;
-    color: white;
+    padding: 0.5em 1em;
     text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-}
-
-/* TODO: Make hover animation have a line go underneath the text */
-nav li a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-nav li a.active {
-    background-color: #04AA6D;
     color: white;
+    text-decoration: none;
+    position: relative;
 }
 
-/* Hero section */
+nav li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: white;
+    transition: width 0.3s;
+}
+
+nav li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: white;
+}
+
 .hero-section {
     /*TODO: edit the photo in photoshop to look like the one in figma */
     background-image: url('steak.jpg');
@@ -55,18 +62,18 @@ nav li a.active {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 6rem;
+    margin-top: 10em;
 }
 
 .title {
-    margin: 5rem 0 0 2rem;
+    margin: 5em 0 0 10em;
 }
 
 .title h1 {
+    margin-bottom: 0.25em;
     font-size: 5rem; 
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin-bottom: 0.25rem;
 }
 
 .title span {
@@ -81,14 +88,14 @@ nav li a.active {
     font-size: 1.2rem;
     color: white;
     text-align: right;
-    line-height: 1.5;
+    line-height: 1.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .buttons {
     display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 4em;
+    margin-top: 3em;
 }
 
 /* TODO: Make button look like the ones on figma */
@@ -99,6 +106,33 @@ nav li a.active {
     padding: 1em 2em;
     text-align: center;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
+    border-radius: 16px; 
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #A00000; 
+    color: #FFFFFF; 
+}
+
+.cta-button2 {
+    border: 0.2em solid #800000;
+    background-color: rgba(255,255,255,0);
+    color: #FFFFFF;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 16px; 
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cta-button2:hover {
+    background-color: #800000; 
+    color: #FFFFFF; 
 }
