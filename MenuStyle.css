@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style-type: none; 
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em; 
+}
+
+nav li {
+    margin-left: 1em; 
+}
+
+nav li a {
+    display: block;
+    padding: 0.5em 1em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: white;
+    transition: width 0.3s;
+}
+
+nav li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: white;
+}
+
+.hero-section {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10em;
+}
+
+.title {
+    margin: 5em 0 0 10em;
+}
+
+.title h1 {
+    margin-bottom: 0.25em;
+    font-size: 5rem; 
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.title span {
+    color: white;
+}
+
+.times {
+    margin: 2em;
+}
+
+.times p {
+    font-size: 1.2rem;
+    color: white;
+    text-align: right;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.background-split {
+    height: 100vh;
+    background: linear-gradient(to bottom, white 70%, #800000 30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bottom-text {
+    text-align: center;
+    padding: 20px;
+    color: white; /* Adjust the color based on your preference */
+}
