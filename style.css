@@ -25,10 +25,11 @@ nav li a {
     padding: 0.5em 1em;
     text-align: center;
     color: white;
+    font-size: 1.2rem;
     text-decoration: none;
     position: relative;
 }
-
+/*TODO: this animation can be more saucy*/
 nav li a::after {
     content: "";
     position: absolute;
@@ -46,7 +47,7 @@ nav li a:hover::after {
     left: 0;
     background: white;
 }
-
+/** HERO SECTION **/
 .hero-section {
     /*TODO: edit the photo in photoshop to look like the one in figma */
     background-image: url('steak.jpg');
@@ -57,7 +58,7 @@ nav li a:hover::after {
     font-family: Arial, sans-serif;
     min-height: 100vh;
 }
-
+/*TODO: made sure we are happy with the font sizes, font family etc. */
 .hero-content {
     display: flex;
     flex-direction: row;
@@ -112,7 +113,7 @@ nav li a:hover::after {
     border-radius: 16px; 
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
-
+/* TODO: Saucier hover animations */
 .cta-button:hover {
     background-color: #A00000; 
     color: #FFFFFF; 
@@ -135,4 +136,89 @@ nav li a:hover::after {
 .cta-button2:hover {
     background-color: #800000; 
     color: #FFFFFF; 
+}
+/** FUNCTIONS SECTION **/
+.functions {
+    padding: 5em 10%;
+}
+
+.function-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+}
+
+.function-information {
+    width: 60ch;
+    font-size: 1.5rem;
+}
+
+.function-information h1{
+    font-size: 5rem;
+    margin-bottom: 0.25em;
+}
+
+.functions-button {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.function-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.function-photos img{
+    width: 800px;
+    height: 375px;
+}
+/** CREDENTIALS SECTION **/
+.credentials {
+    height: 40%;
+    padding: 5em 10%;
+    background-color: #4C0000;
+}
+/*TODO: Fix spacing */
+.credentials-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.award {
+    display: flex;
+    flex-direction: column;
+}
+
+.award img {
+    width: 100%;
+    height: 100px;
+}
+/** MENU FAVOURITES SECTION **/
+
+/** NEWSLETTER SECTION **/
+.newsletter {
+    padding: 5em 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter-content img{
+    width: 350px;
+    height: 650px;
+}
+
+.newsletter-images {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: space-evenly;
+}
+
+/** FOOTER SECTION **/
+footer {
+    background-color: #4C0000;
+    color: #FFFFFF;
 }
