@@ -6,6 +6,11 @@
 
 header {
     width: 100%;
+    background-color: #000000;
+}
+
+#main-page {
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -50,7 +55,7 @@ nav li a:hover::after {
 /** HERO SECTION **/
 .hero-section {
     /*TODO: edit the photo in photoshop to look like the one in figma */
-    background-image: url('steak.jpg');
+    background-image: url('../Images/steak.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -196,8 +201,24 @@ nav li a:hover::after {
     height: 100px;
 }
 /** MENU FAVOURITES SECTION **/
+/* TODO: Get rid of duplicate code */
+.menu-favourites {
+    padding: 5em 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
+.menu-favourites-content h1 {
+    font-size: 5rem;
+}
+.carasouel {
+    height: 45rem;
+    width: 90rem;
+    background-color: #4C0000;
+}
 /** NEWSLETTER SECTION **/
+/* TODO: Fix spacing */
 .newsletter {
     padding: 5em 10%;
     display: flex;
@@ -221,4 +242,47 @@ nav li a:hover::after {
 footer {
     background-color: #4C0000;
     color: #FFFFFF;
+}
+
+/** MENU SECTION **/
+.menu-content {
+    padding: 6.5em 10%;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.menu-item {
+    width: 20rem;
+    height: 40rem;
+    background-color: #800000;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.menu-item:hover {
+    scale: 1.1;
+}
+
+.menu-item img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+}
+
+.menu-item span {
+    position: absolute;
+    bottom: 0.6em;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
 }
